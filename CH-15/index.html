@@ -26,9 +26,9 @@
         <input type="submit" value="+ Add Item">
         </form>
         <br>
-        <button>Delete</button>
-        <button>Check all</button>
-        <button>Uncheck all</button>
+        <button class="clear">Delete</button>
+        <button class="check-all">Check all</button>
+        <button class="uncheck-all">Uncheck all</button>
     </div>
     
     <script>
@@ -77,8 +77,26 @@
         populateList(items, itemsList);
         // home work 
         // make a button that clear all the storage 
+        const clear = document.querySelector('clear');
+        function clearAll(e){
+            console.log("clear all");
+        }
+
+        clear.addEventListener('click', clearAll);
         // a button that check them all 
+        const check = document.querySelector('check-all');
+        function checkAll(e){
+            console.log("check all");
+        }
+
+        check.addEventListener('click', checkAll);
         // make a button that uncheck the checked list 
+        const uncheck = document.querySelector('uncheck-all');
+        function uncheckAll(e){
+            console.log(" uncheck all");
+        }
+
+        uncheck.addEventListener('click', uncheckAll);
 
     </script>
     
